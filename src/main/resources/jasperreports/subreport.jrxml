@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="subreport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20"
+              topMargin="20" bottomMargin="20" uuid="428a9a5d-52f9-4b56-bce0-c63fda641d5d">
+
+    <parameter name="SUB_MAP" class="java.util.Map">
+        <defaultValueExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get("SUBREPORT_MAP")]]></defaultValueExpression>
+    </parameter>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band splitType="Stretch"/>
+    </title>
+    <pageHeader>
+        <band splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band splitType="Stretch"/>
+    </columnHeader>
+    <detail>
+        <band height="462" splitType="Stretch">
+            <staticText>
+                <reportElement x="240" y="10" width="236" height="74" uuid="235de4a5-c609-496c-89b2-df5be8c84e75"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[Main Title]]></text>
+            </staticText>
+            <subreport>
+                <reportElement x="-20" y="90" width="595" height="100" uuid="eda204ac-307e-4ad3-9f21-db569bea7794"/>
+                <dataSourceExpression><![CDATA[new JREmptyDataSource()]]></dataSourceExpression>
+                <subreportExpression><![CDATA[$P{SUB_MAP}.get("subreport_sub1")]]></subreportExpression>
+            </subreport>
+            <subreport>
+                <reportElement x="0" y="230" width="450" height="100" uuid="7ffb1e62-ee5d-4dd8-81d0-80176da1216d"/>
+                <dataSourceExpression><![CDATA[new JREmptyDataSource()]]></dataSourceExpression>
+                <subreportExpression><![CDATA[$P{SUB_MAP}.get("subreport_sub2")]]></subreportExpression>
+            </subreport>
+        </band>
+    </detail>
+    <columnFooter>
+        <band splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band splitType="Stretch"/>
+    </summary>
+</jasperReport>

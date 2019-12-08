@@ -1,6 +1,8 @@
-package example.jasper.ex6_paramToTable;
+package example.jasper.ex7_subreport;
 
 import example.jasper.Constants;
+import example.jasper.ex6_paramToTable.Model;
+import example.jasper.ex6_paramToTable.ModelCreator;
 import net.sf.jasperreports.engine.JREmptyDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
@@ -11,21 +13,20 @@ import net.sf.jasperreports.engine.JasperReport;
 
 import java.util.HashMap;
 
-public class ReportGeneratorParamToTable {
+public class ReportGeneratorSubReport {
 
     public static void generate() throws JRException {
         JasperReport jasperReport;
         JasperPrint jasperPrint;
 
-        Model model = ModelCreator.getModel();
 
-        jasperReport = JasperCompileManager.compileReport(Constants.PATH_JRXML + "parameter_to_table.jrxml");
+        jasperReport = JasperCompileManager.compileReport(Constants.PATH_JRXML + "subreport.jrxml");
 
         HashMap<String, Object> params = new HashMap<>();
-        params.put("DOC", model);
+        params.put("SUBREPORT_MAP", Subreport.getSubreports());
 
         jasperPrint = JasperFillManager.fillReport(jasperReport, params, new JREmptyDataSource());
 
-        JasperExportManager.exportReportToPdfFile(jasperPrint, Constants.PATH_PDF + "parameter_to_table.pdf");
+        JasperExportManager.exportReportToPdfFile(jasperPrint, Constants.PATH_PDF + "subreport.pdf");
     }
 }

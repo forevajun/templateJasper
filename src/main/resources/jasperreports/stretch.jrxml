@@ -37,15 +37,18 @@
                 <text><![CDATA[Param3]]></text>
             </staticText>
             <textField isStretchWithOverflow="true">
-                <reportElement stretchType="RelativeToTallestObject" x="120" y="10" width="424" height="20" uuid="04498c4c-0a9a-4a91-9d74-613dbb1d6c83"/>
+                <reportElement stretchType="RelativeToTallestObject" x="120" y="10" width="424" height="20"
+                               uuid="04498c4c-0a9a-4a91-9d74-613dbb1d6c83"/>
                 <textFieldExpression><![CDATA[$P{DOC}.getParam1()]]></textFieldExpression>
             </textField>
             <textField isStretchWithOverflow="true">
-                <reportElement stretchType="RelativeToTallestObject" x="120" y="40" width="424" height="20" uuid="d44d1259-814b-448e-9659-5b002075ec2f"/>
+                <reportElement stretchType="RelativeToTallestObject" x="120" y="40" width="424" height="20"
+                               uuid="d44d1259-814b-448e-9659-5b002075ec2f"/>
                 <textFieldExpression><![CDATA[$P{DOC}.getParam2()]]></textFieldExpression>
             </textField>
             <textField isStretchWithOverflow="true">
-                <reportElement stretchType="RelativeToTallestObject" x="120" y="70" width="424" height="20" uuid="a85b1bd5-578a-4b25-b855-64c67d537ff1"/>
+                <reportElement stretchType="RelativeToTallestObject" x="120" y="70" width="424" height="20"
+                               uuid="a85b1bd5-578a-4b25-b855-64c67d537ff1"/>
                 <textFieldExpression><![CDATA[$P{DOC}.getParam3()]]></textFieldExpression>
             </textField>
         </band>
@@ -59,11 +62,13 @@
                 <text><![CDATA[Param5]]></text>
             </staticText>
             <textField isStretchWithOverflow="true">
-                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="120" y="10" width="424" height="20" uuid="4c1ffc54-7902-4cbc-9f65-85a76ad11d51"/>
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="120" y="10" width="424"
+                               height="20" uuid="4c1ffc54-7902-4cbc-9f65-85a76ad11d51"/>
                 <textFieldExpression><![CDATA[$P{DOC}.getParam4()]]></textFieldExpression>
             </textField>
             <textField isStretchWithOverflow="true">
-                <reportElement positionType="Float" x="120" y="40" width="424" height="20" uuid="c8323b7f-5823-4df9-a4e7-b40ca08ff390"/>
+                <reportElement positionType="Float" x="120" y="40" width="424" height="20"
+                               uuid="c8323b7f-5823-4df9-a4e7-b40ca08ff390"/>
                 <textFieldExpression><![CDATA[$P{DOC}.getParam5()]]></textFieldExpression>
             </textField>
         </band>
