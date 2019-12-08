@@ -1,6 +1,6 @@
 package example.jasper.ex3_parameter;
 
-public class ModelCreater {
+public class ModelCreator {
 
     public static Model getModel() {
         Model model = new Model();

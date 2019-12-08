@@ -1,4 +1,4 @@
-package example.jasper.ex3_parameter;
+package example.jasper.ex6_paramToTable;
 
 import example.jasper.Constants;
 import net.sf.jasperreports.engine.JREmptyDataSource;
@@ -11,7 +11,7 @@ import net.sf.jasperreports.engine.JasperReport;
 
 import java.util.HashMap;
 
-public class ReportGeneratorParameter {
+public class ReportGeneratorParamToTable {
 
     public static void generate() throws JRException {
         JasperReport jasperReport;
@@ -19,14 +19,13 @@ public class ReportGeneratorParameter {
 
         Model model = ModelCreator.getModel();
 
-        jasperReport = JasperCompileManager.compileReport(Constants.PATH_JRXML + "parameter.jrxml");
+        jasperReport = JasperCompileManager.compileReport(Constants.PATH_JRXML + "param_to_table.jrxml");
 
         HashMap<String, Object> params = new HashMap<>();
         params.put("DOC", model);
 
         jasperPrint = JasperFillManager.fillReport(jasperReport, params, new JREmptyDataSource());
 
-        JasperExportManager.exportReportToPdfFile(jasperPrint, Constants.PATH_PDF + "parameter.pdf");
+        JasperExportManager.exportReportToPdfFile(jasperPrint, Constants.PATH_PDF + "param_to_table.pdf");
     }
-
 }
