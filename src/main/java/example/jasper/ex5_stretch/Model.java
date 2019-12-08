@@ -1,6 +1,6 @@
-package ru.jasper.example5_stretch;
+package example.jasper.ex5_stretch;
 
-public class PrintForm {
+public class Model {
     private String param1;
     private String param2;
     private String param3;

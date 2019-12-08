@@ -1,4 +1,4 @@
-package ru.jasper.example3_field;
+package example.jasper.ex2_field;
 
 import java.util.ArrayList;
 

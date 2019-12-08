@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="field_example" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="405e3dad-f52f-412c-a795-4fd0850a6f28">
-    <queryString>
-        <![CDATA[]]>
-    </queryString>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+                    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="field"
+              pageWidth="595" pageHeight="842"
+              columnWidth="555"
+              leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20"
+              uuid="405e3dad-f52f-412c-a795-4fd0850a6f28">
+
     <field name="name" class="java.lang.String"/>
     <field name="surname" class="java.lang.String"/>
     <background>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stretch" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="405e3dad-f52f-412c-a795-4fd0850a6f28">
-    <parameter name="DOC" class="ru.jasper.example5_stretch.PrintForm"/>
-    <queryString>
-        <![CDATA[]]>
-    </queryString>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+                    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="stretch"
+              pageWidth="595" pageHeight="842"
+              columnWidth="555"
+              leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20"
+              uuid="405e3dad-f52f-412c-a795-4fd0850a6f28">
+
+    <parameter name="DOC" class="example.jasper.ex5_stretch.Model"/>
     <background>
         <band splitType="Stretch"/>
     </background>

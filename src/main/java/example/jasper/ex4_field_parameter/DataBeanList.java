@@ -1,4 +1,4 @@
-package ru.jasper.template_field_and_param;
+package example.jasper.ex4_field_parameter;
 
 import java.util.ArrayList;
 

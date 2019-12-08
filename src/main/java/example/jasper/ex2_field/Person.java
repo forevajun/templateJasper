@@ -1,6 +1,6 @@
-package ru.jasper.example4_objParam;
+package example.jasper.ex2_field;
 
-public class Form {
+public class Person {
     private String name;
     private String surname;
 

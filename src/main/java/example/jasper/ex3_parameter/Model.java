@@ -1,6 +1,6 @@
-package ru.jasper.example3_field;
+package example.jasper.ex3_parameter;
 
-public class Person {
+public class Model {
     private String name;
     private String surname;
 
